@@ -27,8 +27,7 @@ const slides = [
 export default function BannerCarousel() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    slideChanged(slider) {},
+    slideChanged() {},
     created() {
       // optional: auto-play
       setInterval(() => {
